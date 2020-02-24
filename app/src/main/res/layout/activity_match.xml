@@ -38,8 +38,9 @@
         android:id="@+id/score_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3"
-        android:textSize="80sp"
+        android:text="0"
+        android:layout_marginTop="-20dp"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home_logo" />
@@ -50,6 +51,7 @@
         android:layout_height="wrap_content"
         android:text="Add Home Score"
         android:layout_marginBottom="40dp"
+        android:onClick="addHome"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -80,8 +82,9 @@
         android:id="@+id/score_away"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3"
-        android:textSize="80sp"
+        android:text="0"
+        android:layout_marginBottom="-20dp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/away_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -92,6 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="Add Away Score"
+        android:onClick="addAway"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
@@ -101,6 +105,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cek Hasil"
+        android:onClick="cekHasil"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
